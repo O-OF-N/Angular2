@@ -1,10 +1,11 @@
 #div-head{
-    /*height: 20%;*/
-    top: 20;
+    height: 20vh;
+    border-top: 2vh;
 }
 #div-body{
-    /*height: 70%;*/
+    height: 66vh;
 }
 #div-foot{
-    /*height: 10%;*/
+    height: 10vh;
+    border-bottom: 2vh;
 }

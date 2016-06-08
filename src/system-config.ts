@@ -20,6 +20,7 @@ const barrels: string[] = [
   '@angular/compiler',
   '@angular/http',
   '@angular/router',
+  '@angular/router-deprecated',
   '@angular/platform-browser',
   '@angular/platform-browser-dynamic',
 
@@ -36,6 +37,8 @@ const barrels: string[] = [
   'app/home',
   'app/contacus',
   'app/contact-us',
+  'app/+twitter',
+  'app/twitter-feed',
   /** @cli-barrel */
 ];
 

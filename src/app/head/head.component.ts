@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ROUTER_DIRECTIVES, Routes} from '@angular/router';
+import {ROUTER_DIRECTIVES,RouteConfig} from '@angular/router-deprecated';
 import {HomeComponent} from '../home';
 import {ContactUsComponent} from '../contact-us';
 
@@ -10,15 +10,12 @@ import {ContactUsComponent} from '../contact-us';
   styleUrls: ['head.component.css'],
   directives:[ROUTER_DIRECTIVES]
 })
-@Routes([
-  {path: '/home', component: HomeComponent},
-  {path: '/contactUs', component: ContactUsComponent},
+@RouteConfig([
+  {path: '/home', component: HomeComponent, name: 'Home'},
+  {path: '/contactUs', component: ContactUsComponent, name: 'ContactUs'},
 ])
-export class HeadComponent implements OnInit {
+export class HeadComponent {
 
   constructor() {}
-
-  ngOnInit() {
-  }
 
 }
