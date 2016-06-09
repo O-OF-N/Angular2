@@ -13,8 +13,9 @@
     padding-top: 1%;
     padding-bottom: 1%;
 }
-#div-foot{
+#div-tail{
     height: 10%;
+    width: 100%;
 }
 #div-app-twitter-feed{
     float: left;
@@ -37,6 +38,10 @@ app-body{
     width: 100%;
 }
 app-head{
+    height: 100%;
+    width: 100%;
+}
+app-foot{
     height: 100%;
     width: 100%;
 }
