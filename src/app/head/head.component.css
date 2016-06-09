@@ -21,30 +21,31 @@
     align-items: flex-end;
 }
 
-#navigation{
-    height: 100%;
-    width: 100%;
-}
-#navigation ul
+#div-navigation ul
 {
     margin:  0 0 3px 0;;
-    padding: 0;
+    padding-top: 5%;
+    padding-left: 5%;
 }
 
-#navigation ul li
+#div-navigation ul li
 {
     list-style-type: none;
     display: inline;
+    padding-left: 1%;
 }
 
-#navigation li:before {
+#div-navigation li:before {
 content: " | ";
+padding: 0.5%;
 color: seagreen;
 }
 
-#navigation li:first-child:before {
+#div-navigation li:first-child:before {
 content: none;
 }
 a{
     color: lightblue;
+    font-size: 20px;
+    font-style: italic;
 }
