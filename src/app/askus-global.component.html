@@ -1,19 +1,20 @@
-<div id="div-head">
-  <app-head></app-head>
+<div id="div-app-component">
+  <div id="div-head">
+    <app-head></app-head>
+  </div>
+  <div id="div-body">
+    <table>
+      <tr>
+        <td item-width="80%">
+          <app-body></app-body>
+        </td>
+        <td item-width="20%">
+          <app-twitter-feed></app-twitter-feed>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div id="div-tail">
+    <app-foot></app-foot>
+  </div>
 </div>
-<div id="div-body">
-  <table>
-    <tr>
-      <td item-width="80%">
-        <app-body></app-body>
-      </td>
-      <td item-width="20%">
-        <app-twitter-feed></app-twitter-feed>
-      </td>
-    </tr>
-  </table>
-</div>
-<div id="div-tail">
-  <app-foot></app-foot>
-</div>
-<router-outlet></router-outlet>

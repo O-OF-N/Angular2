@@ -1,5 +1,29 @@
 #div-head{
-    background-color: blueviolet;
+    background-color: #1B1C1C;
     width: 100%; 
     top: 0;
+}
+
+#navigation ul
+{
+    margin:  0 0 3px 0;;
+    padding: 0;
+}
+
+#navigation ul li
+{
+    list-style-type: none;
+    display: inline;
+}
+
+#navigation li:before {
+content: " | ";
+color: seagreen;
+}
+
+#navigation li:first-child:before {
+content: none;
+}
+a{
+    color: lightblue;
 }
