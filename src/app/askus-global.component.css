@@ -1,11 +1,11 @@
 #div-head{
-    height: 20vh;
-    border-top: 2vh;
+    height: 20%;
+    border-top: 2%;
 }
 #div-body{
-    height: 66vh;
+    height: 66%;
 }
 #div-foot{
-    height: 10vh;
-    border-bottom: 2vh;
+    height: 10%;
+    border-bottom: 2%;
 }
