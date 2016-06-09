@@ -1,7 +1,21 @@
 #div-head{
     background-color: #1B1C1C;
     width: 100%; 
+    height: 100%;
     top: 0;
+}
+
+#div-logo{
+    width: 20%;
+    height: inherit;
+    float: left;
+}
+
+#div-navigation{
+    width: 80%;
+    height: inherit;
+    float: left;
+    align-items: flex-end;
 }
 
 #navigation ul

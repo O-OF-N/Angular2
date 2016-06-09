@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   moduleId: module.id,
   selector: 'app-twitter-feed',
   templateUrl: 'twitter-feed.component.html',
-  styles: ['twitter-feed.component.css']
+  styleUrls: ['twitter-feed.component.css']
 })
 export class TwitterFeedComponent implements OnInit {
   url: string = "https://twitter.com/vmisblue";
