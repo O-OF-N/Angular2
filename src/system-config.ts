@@ -39,6 +39,9 @@ const barrels: string[] = [
   'app/contact-us',
   'app/+twitter',
   'app/twitter-feed',
+  'app/our-geeks',
+  'app/services',
+  'app/about-us',
   /** @cli-barrel */
 ];
 
