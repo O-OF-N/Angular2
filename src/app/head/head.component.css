@@ -7,17 +7,21 @@
 
 #div-logo{
     width: 20%;
-    height: inherit;
+    height: 100%;
     float: left;
 }
 
 #div-navigation{
     width: 80%;
-    height: inherit;
+    height: 100%;
     float: left;
     align-items: flex-end;
 }
 
+#navigation{
+    height: 100%;
+    width: 100%;
+}
 #navigation ul
 {
     margin:  0 0 3px 0;;
