@@ -19,7 +19,7 @@ import { Routes , ROUTER_DIRECTIVES} from '@angular/router';
   directives:[BodyComponent,HeadComponent,FootComponent,TwitterFeedComponent,OurGeeksComponent,ServicesComponent,AboutUsComponent]
 })
 @RouteConfig([
-  {path: '/home', component: HomeComponent, name: 'Home'},
+  {path: '/home', component: HomeComponent, name: 'Home',useAsDefault: true},
   {path: '/ourGeeks', component: OurGeeksComponent, name: 'OurGeeks'},
   {path: '/contactUs', component: ContactUsComponent, name: 'ContactUs'},
   {path: '/aboutUs', component: AboutUsComponent, name: 'AboutUs'},
