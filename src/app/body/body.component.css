@@ -5,7 +5,8 @@
     border: 2px;
     border-style: inset;
     border-color: blue;
-    color: wheat;
+    color: lightblue;
+    text-align: justify;
 }
 router-outlet{
     width: 100%;
