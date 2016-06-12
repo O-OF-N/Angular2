@@ -24,11 +24,7 @@ import { Routes , ROUTER_DIRECTIVES} from '@angular/router';
   {path: '/contactUs', component: ContactUsComponent, name: 'ContactUs'},
   {path: '/aboutUs', component: AboutUsComponent, name: 'AboutUs'},
   {path: '/services', component: ServicesComponent, name: 'Services'},
+  {path: '/trending', component: TwitterFeedComponent, name: 'Trending'},
 ])
 export class AskusGlobalAppComponent {
-  title = 'askus-global works!';
-  cluck(x:string){
-    console.log(typeof x);
-    console.log(x);
-  }
 }

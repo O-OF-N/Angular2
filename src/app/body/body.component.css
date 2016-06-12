@@ -7,6 +7,7 @@
     border-color: blue;
     color: lightblue;
     text-align: justify;
+    overflow-y: scroll;
 }
 router-outlet{
     width: 100%;

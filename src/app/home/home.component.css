@@ -2,6 +2,8 @@
 .flip-container {
     perspective: 1000px;
     background-color: #80b3ff;
+	overflow-x: scroll;
+	overflow-y: scroll;
 }
 	/* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
@@ -77,5 +79,7 @@
 #text-container {
 	font-size: 20px;
 	margin: 1%;
+	height: inherit;
+	width: 80%;
 }
 
