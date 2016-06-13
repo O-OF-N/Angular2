@@ -17,21 +17,12 @@
     height: 10%;
     width: 100%;
 }
-#div-app-twitter-feed{
-    float: left;
-    height: 100%;
-    width: 16%;
-}
 #div-app-body{
     float: left;
     height: 100%;
-    width: 80%;
+    width: 100%;
     padding-left: 1%;
     padding-right: 1%;
-}
-app-twitter-feed{
-    height: 100%;
-    width: 100%;
 }
 app-body{
     height: 100%;
