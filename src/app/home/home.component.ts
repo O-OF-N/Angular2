@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {DataService} from '../data-service';
 
 @Component({
@@ -12,7 +12,9 @@ export class HomeComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.a;
+    console.log(Object.keys(this));
+    this.dataService.addProp(this);
+    console.log(Object.keys(this));
   }
 
 }
