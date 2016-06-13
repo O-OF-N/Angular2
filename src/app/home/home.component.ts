@@ -9,10 +9,10 @@ import {DataService} from '../data-service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private dataService:DataService) {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    console.log(this.dataService.a);
+    this.dataService.a;
   }
 
 }
