@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     console.log(Object.keys(this));
-    this.dataService.addProp(this);
+    this.dataService.addProp(this,'homeComponent');
     console.log(Object.keys(this));
   }
 
