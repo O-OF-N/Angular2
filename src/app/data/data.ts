@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
-import {Home} from './interfaces.ts';
+import {HomeComponent,DataComponent} from './interfaces.ts';
 
-export class Data {
+export class Data implements DataComponent{
         //Home Page
-        homeComponent:Home =  {
+        homeComponent:HomeComponent =  {
             //Running text [string]
             intro:  `We are an end to end IT consulting company focussed on offering specialized 
             and highly customized technology solutions for small and medium sized businesses. 
