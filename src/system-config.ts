@@ -29,6 +29,7 @@ const barrels: string[] = [
 
   // App specific barrels.
   'app',
+  'app/components/data',
   'app/components/askus-global',
   'app/components/shared',
   'app/components/head',
