@@ -1,33 +1,19 @@
 <div id="div-our-geeks">
   <div id="div-header">
-    <h1> Meet Our Geeks </h1>
+    <h1> {{title}} </h1>
   </div>
-  <div class="div-person">
+  <div class="div-person" *ngFor="let person of persons">
     <div class="div-left">
       <div class="div-image">
-        <img src="prasanna.jpg" width="150" height="114">
+        <img src="{{person.imagePath}}" width="150" height="114">
       </div>     
     </div>
     <div class="div-right">
       <div class = "div-text">
-        <p><b>Prasanna Rajendran </b><BR/><BR/> Managing Director and a passionate Teacher <BR/><BR/> 
-        <b>Geek Magnets: </b> GIS, Remotesensing <BR/><BR/>      
-        When he is not grooming the future Geologists, he loves to kick a soccer ball around.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="div-person">
-    <div class="div-left">
-      <div class="div-image">
-        <img src="narayanan.jpg" width="150" height="114">
-      </div>     
-    </div>
-    <div class="div-right">
-      <div class = "div-text">
-        <p><b>Narayanan Asokan </b><BR/><BR/> Managing Director and a problem solver <BR/><BR/> 
-        <b>Geek Magnets: </b> Information Technology <BR/><BR/>      
-        When he is not building the coolest thing out there......well... he always is.</p>
+        <p><b>{{person.name}} </b><BR/><BR/> 
+        {{person.position}} <BR/><BR/> 
+        <b>Geek Magnets: </b> {{person.geekMagnets}} <BR/><BR/>      
+        {{person.description}}</p>
       </div>
     </div>
   </div>

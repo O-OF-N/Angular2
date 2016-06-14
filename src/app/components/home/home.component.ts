@@ -12,9 +12,7 @@ export class HomeComponent implements OnInit {
   constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    console.log(Object.keys(this));
     this.dataService.addProp(this,'homeComponent');
-    console.log(Object.keys(this));
   }
 
 }
