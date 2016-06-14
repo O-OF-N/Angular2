@@ -2,7 +2,7 @@ import {Injectable} from '@angular/core';
 import {HomeComponent, DataComponent, GeeksComponent, AboutUsComponent, HeaderComponent, RouteComponent} from './interfaces.ts';
 
 export class Data implements DataComponent {
-    //Page: Home 
+    /******************************************** Page: Home ****************************************************************/ 
     homeComponent: HomeComponent = {
         //Running text [string]
         intro: `We are an end to end IT consulting company focussed on offering specialized 
@@ -20,7 +20,8 @@ export class Data implements DataComponent {
         ]
     };
 
-    //Page: Meet the Geeks
+
+    /******************************************** Page: Meet the Geeks ****************************************************************/ 
     geeksComponent: GeeksComponent = {
         //Title on top of the page[String]
         title: "Meet Our Geeks",
@@ -47,7 +48,8 @@ export class Data implements DataComponent {
             }]
     };
 
-    //Page: A sneak peak
+
+    /******************************************** Page: A sneak peak ****************************************************************/ 
     aboutUsComponent: AboutUsComponent = {
         title: "A Sneak Peak",
         imagePath: "about-us.jpg",
@@ -72,7 +74,8 @@ export class Data implements DataComponent {
     complete technical support team.`
     };
 
-    //Page: Header
+    
+    /******************************************** Page: Header ****************************************************************/ 
     headerComponent:HeaderComponent = {
         //The ask us global logo image path
         imagePath: "logo.jpg",
