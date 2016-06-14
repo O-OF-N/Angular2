@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {HomeComponent, DataComponent, GeeksComponent, AboutUsComponent} from './interfaces.ts';
+import {HomeComponent, DataComponent, GeeksComponent, AboutUsComponent, HeaderComponent, RouteComponent} from './interfaces.ts';
 
 export class Data implements DataComponent {
     //Page: Home 
@@ -70,5 +70,29 @@ export class Data implements DataComponent {
     The success of your IT company also lies in its strategic alliances and partnerships. 
     Ask Us Global Solutions has cultivated relationships with some of the major industry players to provide you a 
     complete technical support team.`
+    }
+
+    //Page: Header
+    headerComponent:HeaderComponent = {
+        imagePath: "logo.jpg",
+        routeComponent:[{
+            name:"Home",
+            routes:['Home']
+        },{
+            name:"Masters of some",
+            routes:['Services']
+        },{
+            name:"Meet the Geeks",
+            routes:['OurGeeks']
+        },{
+            name:"A sneak Peak",
+            routes:['AboutUs']
+        },{
+            name:"What's tending?",
+            routes:['Trending']
+        },{
+            name:"The Workshop",
+            routes:['ContactUs']
+        }]
     }
 }

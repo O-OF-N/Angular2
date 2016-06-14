@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ROUTER_DIRECTIVES,RouteConfig} from '@angular/router-deprecated';
+import {DataService} from '../../services/data-service';
 
 @Component({
   moduleId: module.id,
@@ -8,8 +9,12 @@ import {ROUTER_DIRECTIVES,RouteConfig} from '@angular/router-deprecated';
   styleUrls: ['head.component.css'],
   directives:[ROUTER_DIRECTIVES]
 })
-export class HeadComponent {
+export class HeadComponent implements OnInit {
 
-  constructor() {}
+  constructor(private dataService: DataService) {}
+  
+  ngOnInit() {
+    this.dataService.addProp(this,'headerComponent');
+  }
 
 }

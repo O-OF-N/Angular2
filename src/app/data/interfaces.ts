@@ -7,3 +7,5 @@ export interface Person {
     geekMagnets: string, description: string
 };
 export interface AboutUsComponent { title: string, imagePath: string, description: string };
+export interface RouteComponent{name:string,routes:string[]};
+export interface HeaderComponent{imagePath:string,routeComponent:RouteComponent[]};
