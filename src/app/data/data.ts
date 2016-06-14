@@ -1,6 +1,8 @@
 import {Injectable} from '@angular/core';
 import {HomeComponent, DataComponent, GeeksComponent, AboutUsComponent, HeaderComponent, RouteComponent} from './interfaces.ts';
 
+//This class contains the contents displayed on the HTML pages.
+
 export class Data implements DataComponent {
     /******************************************** Page: Home ****************************************************************/ 
     homeComponent: HomeComponent = {
