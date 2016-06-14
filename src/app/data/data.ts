@@ -74,7 +74,10 @@ export class Data implements DataComponent {
 
     //Page: Header
     headerComponent:HeaderComponent = {
+        //The ask us global logo image path
         imagePath: "logo.jpg",
+        //Better not to mess around with this.
+        //ToDo: Contact Vinod if any changes are needed with routes.
         routeComponent:[{
             name:"Home",
             routes:['Home']
