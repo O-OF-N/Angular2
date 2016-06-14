@@ -5,7 +5,7 @@ import {
   it,
   inject
 } from '@angular/core/testing';
-import { AskusGlobalAppComponent } from '../app/askus-global.component';
+import { AskusGlobalAppComponent } from './askus-global.component';
 
 beforeEachProviders(() => [AskusGlobalAppComponent]);
 

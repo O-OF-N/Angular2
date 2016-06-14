@@ -29,19 +29,19 @@ const barrels: string[] = [
 
   // App specific barrels.
   'app',
-  'app/shared',
-  'app/body/body',
-  'app/head',
-  'app/body',
-  'app/foot',
-  'app/home',
-  'app/contacus',
-  'app/contact-us',
-  'app/twitter-feed',
-  'app/our-geeks',
-  'app/services',
-  'app/about-us',
-  'app/data-service',
+  'app/components/askus-global',
+  'app/components/shared',
+  'app/components/head',
+  'app/components/body',
+  'app/components/foot',
+  'app/components/home',
+  'app/components/contacus',
+  'app/components/contact-us',
+  'app/components/twitter-feed',
+  'app/components/our-geeks',
+  'app/components/services',
+  'app/components/about-us',
+  'app/services/data-service',
   /** @cli-barrel */
 ];
 

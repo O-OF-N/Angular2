@@ -1,7 +1,7 @@
 import { bootstrap } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
-import { AskusGlobalAppComponent, environment } from './app/';
-import {DataService} from './app/data-service/';
+import { AskusGlobalAppComponent, environment } from './app/components/askus-global';
+import {DataService} from './app/services/data-service/';
 
 import {ROUTER_PROVIDERS} from '@angular/router-deprecated'
 
