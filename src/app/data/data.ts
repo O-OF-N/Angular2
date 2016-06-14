@@ -45,7 +45,7 @@ export class Data implements DataComponent {
                 geekMagnets: "Information Technology",
                 description: "When he is not building the coolest thing out there......well... he always is."
             }]
-    }
+    };
 
     //Page: A sneak peak
     aboutUsComponent: AboutUsComponent = {
@@ -70,7 +70,7 @@ export class Data implements DataComponent {
     The success of your IT company also lies in its strategic alliances and partnerships. 
     Ask Us Global Solutions has cultivated relationships with some of the major industry players to provide you a 
     complete technical support team.`
-    }
+    };
 
     //Page: Header
     headerComponent:HeaderComponent = {
@@ -97,5 +97,5 @@ export class Data implements DataComponent {
             name:"The Workshop",
             routes:['ContactUs']
         }]
-    }
+    };
 }
