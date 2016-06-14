@@ -27,12 +27,12 @@ export class Data implements DataComponent {
     geeksComponent: GeeksComponent = {
         //Title on top of the page[String]
         title: "Meet Our Geeks",
-        //Each person is a an entry in the array
-        //name => name of the person[String]
-        //imagePath => image name[String]
-        //position => the position of the person [String]
-        //geekMagnets => The person's interests [String]
-        //description => the description of the person [String]
+            //Each person is a an entry in the array
+            //name => name of the person[String]
+            //imagePath => image name[String]
+            //position => the position of the person [String]
+            //geekMagnets => The person's interests [String]
+            //description => the description of the person [String]
         persons: [
             {
                 name: "Prasanna Rajendran",
@@ -53,8 +53,11 @@ export class Data implements DataComponent {
 
     /******************************************** Page: A sneak peak ****************************************************************/ 
     aboutUsComponent: AboutUsComponent = {
+        //Page title[String]
         title: "A Sneak Peak",
+        //Image path[String]
         imagePath: "about-us.jpg",
+        //Rest of the text on the screen -This is capable of taking HTML. [String]
         description: `Ask Us Global Solutions is an innovative and rapidly growing end to end IT consulting firm. We offer solutions to most challenging
     issues in the complex IT world, by applying the technical and domain expertise we have gained over the years.
     <BR/><BR/>
