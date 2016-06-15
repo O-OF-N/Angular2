@@ -1,11 +1,27 @@
-<div id="div-head">
-  <div id="div-logo">
-    <img src="{{imagePath}}" width="100%" height="100%">
+<div id="div-head" (window:resize)="onResize($event)">
+  <div id="div-head-browser" *ngIf="width > 700">
+    <div id="div-logo-browser">
+      <img src="{{imagePath}}" width="100%" height="100%">
+    </div>
+    <div id="div-navigation-browser">
+      <ul>
+        <li *ngFor="let routes of routeComponent">
+          <a [routerLink]="routes.routes">{{routes.name}}</a></li>
+      </ul>
+    </div>
   </div>
-  <div id="div-navigation">
-    <ul>
-      <li *ngFor="let routes of routeComponent">
-        <a [routerLink]="routes.routes">{{routes.name}}</a></li>
-    </ul>
+  <div id="div-head-mobile" *ngIf="width < 700">
+    <div id="div-nav-drawer-mobile">
+      <button (click)="toggle()">Click</button>
+    </div>  
+    <div id="div-logo-mobile">
+      <img src="{{imagePath}}" width="100%" height="100%">
+    </div>
+    <div id="div-navigation-mobile" *ngIf="click">
+      <ul>
+        <li *ngFor="let routes of routeComponent">
+          <a [routerLink]="routes.routes">{{routes.name}}</a></li>
+      </ul>
+    </div>
   </div>
 </div>

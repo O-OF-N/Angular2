@@ -1,4 +1,4 @@
-#div-head{
+#div-head {
     background-color: #1B1C1C;
     width: 100%; 
     height: 100%;
@@ -8,42 +8,94 @@
     border-color: blue;
 }
 
-#div-logo{
+/*Config for browser */
+#div-logo-browser{
     width: 20%;
     height: 100%;
     float: left;
 }
 
-#div-navigation{
+#div-navigation-browser{
     width: 80%;
     height: 100%;
     float: left;
     align-items: flex-end;
 }
 
-#div-navigation ul
+#div-navigation-browser ul
 {
     margin:  0 0 3px 0;;
     padding-top: 5%;
     padding-left: 5%;
 }
 
-#div-navigation ul li
+#div-navigation-browser ul li
 {
     list-style-type: none;
     display: inline;
     padding-left: 1%;
 }
 
-#div-navigation li:before {
+#div-navigation-browser li:before {
 content: " | ";
 padding: 0.5%;
 color: seagreen;
 }
 
-#div-navigation li:first-child:before {
-content: none;
+#div-navigation-browser li:first-child:before {
+    content: none;
 }
+#div-head-browser {
+    width: 100%;
+    height: 100%;
+}
+
+/*config for the mobile*/
+#div-nav-drawer-mobile{
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+#div-logo-mobile{
+    width: 90%;
+    height: 100%;
+    float: left;
+}
+
+#div-navigation-mobile{
+    width: 80%;
+    height: 100%;
+    float: left;
+    align-items: flex-end;
+}
+
+#div-navigation-mobile ul
+{
+    margin:  0 0 3px 0;;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#div-navigation-mobile ul li
+{
+    list-style-type: none;
+    padding-left: 1%;
+}
+
+#div-navigation-mobile li:before {
+content: " | ";
+padding: 0.5%;
+color: seagreen;
+}
+
+#div-navigation-mobile li:first-child:before {
+    content: none;
+}
+#div-head-mobile {
+    width: 100%;
+    height: 100%;
+}
+
 a{
     color: lightblue;
     font-size: 20px;

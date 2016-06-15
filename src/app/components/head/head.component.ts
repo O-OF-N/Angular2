@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ROUTER_DIRECTIVES,RouteConfig} from '@angular/router-deprecated';
+import {ROUTER_DIRECTIVES, RouteConfig} from '@angular/router-deprecated';
 import {DataService} from '../../services/data-service';
 
 @Component({
@@ -7,14 +7,26 @@ import {DataService} from '../../services/data-service';
   selector: 'app-head',
   templateUrl: 'head.component.html',
   styleUrls: ['head.component.css'],
-  directives:[ROUTER_DIRECTIVES]
+  directives: [ROUTER_DIRECTIVES]
 })
 export class HeadComponent implements OnInit {
+  width: number;
+  click:boolean=false;
+  constructor(private dataService: DataService) { }
 
-  constructor(private dataService: DataService) {}
-  
   ngOnInit() {
-    this.dataService.addProp(this,'headerComponent');
+    this.width = window.innerWidth;
+    this.dataService.addProp(this, 'headerComponent');
   }
+  onResize(event) {
+    console.log(window.innerWidth);
+    this.width = window.innerWidth;
+  }
+  toggle(){
+    console.log(`before = ${this.click}`);
+    this.click=!this.click;
+    console.log(`after = ${this.click}`);
+  }
+
 
 }
