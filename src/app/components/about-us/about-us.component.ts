@@ -13,7 +13,6 @@ export class AboutUsComponent implements OnInit {
 
   ngOnInit() {
     this.dataService.addProp(this, 'aboutUsComponent');
-
   }
 
 }

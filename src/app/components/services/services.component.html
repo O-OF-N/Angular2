@@ -1,3 +1,21 @@
-<p>
-  services works!
-</p>
+<div id="div-services">
+  <div id="div-header">
+    <h1> {{title}} </h1>
+  </div>
+  <div id="div-text" *ngFor="let service of services">
+    <div id="div-text-header"><b>{{service.header}}</b></div>
+    <BR/>
+    <div id="div-text-description" [innerHTML]="service.description">
+    </div>
+    <div id="div-img">
+      <img src="{{service.imagePath}}" />
+    </div>
+  </div>
+  <br/>
+  <!--<div id="other">
+    <b> We can also help you with:</b>
+    <ul>
+      <li *ngFor="let otherService of otherServices">{{otherService}}</li>
+    </ul>
+  </div>-->
+</div>

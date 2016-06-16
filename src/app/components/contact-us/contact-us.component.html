@@ -1,19 +1,16 @@
 <div id="div-contact-us">
   <div id="div-header">
-    <h1> The Workshop </h1>
+    <h1> {{title}} </h1>
   </div>
   <div id="div-text">
-    Our Humans break ground here:
-      Ask Us Global Solutions
-      No 5, Old Fort Street, Near Be Well Hospital, Poonamalle,
-      Chennai, Tamil Nadu 600056
-   
-   Conversely, if you wish to honor Alexander Graham Bell like we do, ring us at:
-      7373635553/9994010222
-
-    We are also accessible through other good stuff:
-      Email: askusglobal@gmail.com
-        
-
+    <div id="addressText"><b>{{addressText}}</b></div>
+    <div id="address" [innerHTML]="address"></div>
+    <BR/>
+    <div id="phoneText"><b>{{phoneText}}</b></div>
+    <div id="phoneNo">{{phoneNo}}</div>
+    <BR/>
+    <div id="otherContactsText"><b>{{otherContactsText}}</b>
+      <a *ngFor="let otherContact of otherContacts" href="{{otherContact.link}}"><img src="{{otherContact.imagePath}}" width="50px" height="50px"></a>
+    </div>
   </div>
 </div>

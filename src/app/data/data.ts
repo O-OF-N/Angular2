@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core';
-import {HomeComponent, DataComponent, GeeksComponent, AboutUsComponent, HeaderComponent, RouteComponent} from './interfaces.ts';
+import {ServicesComponent, ContactUsComponent, HomeComponent, DataComponent, GeeksComponent, AboutUsComponent, HeaderComponent, RouteComponent} from './interfaces.ts';
 
 //This class contains the contents displayed on the HTML pages.
 
 export class Data implements DataComponent {
-    /******************************************** Page: Home ****************************************************************/ 
+    /******************************************** Page: Home ****************************************************************/
     homeComponent: HomeComponent = {
         //Running text [string]
         intro: `We are an end to end IT consulting company focussed on offering specialized 
@@ -23,16 +23,16 @@ export class Data implements DataComponent {
     };
 
 
-    /******************************************** Page: Meet the Geeks ****************************************************************/ 
+    /******************************************** Page: Meet the Geeks ****************************************************************/
     geeksComponent: GeeksComponent = {
         //Title on top of the page[String]
         title: "Meet Our Geeks",
-            //Each person is a an entry in the array
-            //name => name of the person[String]
-            //imagePath => image name[String]
-            //position => the position of the person [String]
-            //geekMagnets => The person's interests [String]
-            //description => the description of the person [String]
+        //Each person is a an entry in the array
+        //name => name of the person[String]
+        //imagePath => image name[String]
+        //position => the position of the person [String]
+        //geekMagnets => The person's interests [String]
+        //description => the description of the person [String]
         persons: [
             {
                 name: "Prasanna Rajendran",
@@ -51,7 +51,7 @@ export class Data implements DataComponent {
     };
 
 
-    /******************************************** Page: A sneak peak ****************************************************************/ 
+    /******************************************** Page: A sneak peak ****************************************************************/
     aboutUsComponent: AboutUsComponent = {
         //Page title[String]
         title: "A Sneak Peak",
@@ -79,31 +79,77 @@ export class Data implements DataComponent {
     complete technical support team.`
     };
 
-    
-    /******************************************** Page: Header ****************************************************************/ 
-    headerComponent:HeaderComponent = {
+
+    /******************************************** Page: Header ****************************************************************/
+    headerComponent: HeaderComponent = {
         //The ask us global logo image path
         imagePath: "logo.jpg",
         //This is complex!! Better not to mess around with this.
         //Contact Vinod Mohanan if any changes are needed with routes.
-        routeComponent:[{
-            name:"Home",
-            routes:['Home']
-        },{
-            name:"Masters of some",
-            routes:['Services']
-        },{
-            name:"Meet the Geeks",
-            routes:['OurGeeks']
-        },{
-            name:"A sneak Peak",
-            routes:['AboutUs']
-        },{
+        routeComponent: [{
+            name: "Home",
+            routes: ['Home']
+        }, {
+                name: "Masters of some",
+                routes: ['Services']
+            }, {
+                name: "Meet the Geeks",
+                routes: ['OurGeeks']
+            }, {
+                name: "A sneak Peak",
+                routes: ['AboutUs']
+            },/*{
             name:"What's tending?",
             routes:['Trending']
-        },{
-            name:"The Workshop",
-            routes:['ContactUs']
-        }]
+        },*/{
+                name: "The Workshop",
+                routes: ['ContactUs']
+            }]
     };
+
+    /******************************************** Page: The Workshop ****************************************************************/
+    contactUsComponent: ContactUsComponent = {
+        title: "The Workshop",
+        addressText: "Our Humans break ground here:",
+        address: `Ask Us Global Solutions<BR/>
+        No 5, Old Fort Street, Near Be Well Hospital, Poonamalle,<BR/>
+        Chennai, Tamil Nadu 600056`,
+        phoneText: "Conversely, if you wish to honor Alexander Graham Bell like we do, ring us at:",
+        phoneNo: "7373635553/9994010222",
+        otherContactsText: "We are also accessible through other good stuff:",
+        otherContacts: [
+            { imagePath: "mail.png", link: "mailto:askusglobal@gmail.com" },
+            { imagePath: "fb.png", link: "https://www.facebook.com/askusglobal/" }
+        ]
+    };
+    /******************************************** Page: Masters of some ****************************************************************/
+    servicesComponent: ServicesComponent = {
+        title: "Masters of some",
+        services: [
+            {
+                header: "Strategies and Planning:",
+                description: `Getting reliable results from a telecommunications system requires in-depth planning, installation and management. Our team of IT experts understands every aspect of telecommunications — from planning to project management, installation, testing, training and implementation.`,
+                imagePath: "strategies.jpg"
+            },
+            {
+                header: "Technology Assessments:",
+                description: `The quality, performance and security of your network can be vastly improved with our technology audits. Working together with your in-house teams, we analyze your IT infrastructure in order to identify vulnerabilities. Then we set priorities that match your personnel and budget requirements.`,
+                imagePath: "tech-assessments.jpg"
+            },
+            {
+                header: "Implementation:",
+                description: `Installing and testing your new platforms can cause nightmares for even the most seasoned IT professional. Ask Us Global Solutions thoroughly tests and re-tests all devices and software prior to your switch-over date. You can rest assured that from the moment you connect your new system, all data and communications will function as you need it to.`,
+                imagePath: "strategies.jpg"
+            },
+            {
+                header: "IT Budget Planning:",
+                description: `The highly trained and experienced project managers at Ask Us Global Solutions can help you acquire the technology you require to reach your business objectives within a budget that works for you.`,
+                imagePath: "strategies.jpg"
+            }
+        ],
+        otherServices: ['Application development',
+            'Application Maintenance',
+            'Application or network enhancement',
+            'Platform migration']
+    }
 }
