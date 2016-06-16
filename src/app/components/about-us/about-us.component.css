@@ -19,5 +19,7 @@
     width: 20%;
     height: 90%;
     padding: 2%;
-    float: left
+    float: left;
+    max-width: 200px;
+    max-height: 200px;
 }
