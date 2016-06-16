@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>AskusGlobal</title>
+  <title>Askus Global</title>
   <base href="/"> {{content-for 'head'}}
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +36,8 @@
       width: 100%;
     }
     
-    #img-loading,#div-loading {
+    #img-loading,
+    #div-loading {
       position: absolute;
       top: 0;
       left: 0;
@@ -66,14 +67,6 @@
   <script src="vendor/zone.js/dist/zone.js"></script>
 
   <script>
-    (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=1687445188183815";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
     System.import('system-config.js').then(function () {
       System.import('main');
     }).catch(console.error.bind(console));
