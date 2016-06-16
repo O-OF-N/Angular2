@@ -80,6 +80,7 @@ color: seagreen;
 {
     list-style-type: none;
     padding-left: 1%;
+
 }
 
 #div-navigation-mobile li:before {
@@ -100,4 +101,12 @@ a{
     color: lightblue;
     font-size: 20px;
     font-weight: bolder;
+    text-decoration: none;
+}
+a:active{
+    background-color: darkgrey;
+}
+
+a:hover{
+    background-color: darkorange ;
 }

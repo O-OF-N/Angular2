@@ -20,7 +20,7 @@
     <div id="div-navigation-mobile" *ngIf="click">
       <ul>
         <li *ngFor="let routes of routeComponent">
-          <a [routerLink]="routes.routes">{{routes.name}}</a></li>
+          <a id="a-menu-item" [routerLink]="routes.routes">{{routes.name}}</a></li>
       </ul>
     </div>
   </div>
