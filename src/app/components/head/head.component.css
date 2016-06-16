@@ -103,10 +103,10 @@ a{
     font-weight: bolder;
     text-decoration: none;
 }
-a:active{
-    background-color: darkgrey;
+.router-link-active{
+    background-color: darkorange;
 }
 
 a:hover{
-    background-color: darkorange ;
+    background-color: orange ;
 }

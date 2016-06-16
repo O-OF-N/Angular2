@@ -28,5 +28,4 @@ export class HeadComponent implements OnInit {
     console.log(`after = ${this.click}`);
   }
 
-
 }
