@@ -104,15 +104,15 @@ a{
     text-decoration: none;
 }
 .router-link-active{
-    background-color: #568EE8;
+    background-color: dodgerblue;
     border-radius: 10px;
     border-style: dashed;
-    border-color: darkorange;
+    border-color: khaki;
     transform: scale(2);
 }
 
 a:hover{
-    background-color: cornflowerblue ;
+    background-color: dodgerblue ;
     border-radius: 10px;
     border-style: dashed;
     border-color: ivory;
