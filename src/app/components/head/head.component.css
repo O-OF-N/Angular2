@@ -109,6 +109,8 @@ a{
     border-style: dashed;
     border-color: khaki;
     transform: scale(2);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 a:hover{
