@@ -104,9 +104,24 @@ a{
     text-decoration: none;
 }
 .router-link-active{
-    background-color: darkorange;
+    background-color: #568EE8;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: darkorange;
+    transform: scale(2);
 }
 
 a:hover{
-    background-color: orange ;
+    background-color: cornflowerblue ;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: ivory;
+}
+
+ul div:hover{
+    -webkit-transform: rotate(360deg) scale(2);
+    -moz-transform: rotate(360deg) scale(2);
+    -o-transform: rotate(360deg) scale(2);
+    -ms-transform: rotate(360deg) scale(2);
+    transform: scale(5);
 }

@@ -9,3 +9,24 @@
     height: 100%;
     bottom: 0;
 }
+#div-fb{
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    padding-top: 0%;
+}
+#div-twitter{
+    float: left;
+    width: auto;
+    height: auto;
+    padding: 2%;
+    padding-top: 0%;
+}
+#div-copyright{
+    width: auto;
+    height: auto;
+    text-align: center;
+    padding: 2%;
+    padding-left: 0%;
+}
