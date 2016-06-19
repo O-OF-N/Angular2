@@ -2,7 +2,7 @@
   <div id="div-header">
     <h1> {{title}} </h1>
   </div>
-  <div id="div-text" *ngFor="let service of services">
+  <div id="div-text" class= "popout-services" *ngFor="let service of services">
     <div id="div-text-header"><b>{{service.header}}</b></div>
     <BR/>
     <div id="div-text-description" [innerHTML]="service.description">

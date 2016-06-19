@@ -23,3 +23,18 @@
     max-width: 200px;
     max-height: 200px;
 }
+
+.popout-aboutus {
+    animation: popout 1s ease;
+    -webkit-animation: popout-aboutus 1s ease;
+}
+@keyframes popout-aboutus {
+    from{transform:skew(0deg)}
+    80%{transform:skew(5deg)}
+    to{transform:skew(0deg)}
+}
+@-webkit-keyframes popout-aboutus {
+    from{-webkit-transform:scale(1)}
+    80%{-webkit-transform:scale(1.2)}
+    to{-webkit-transform:scale(1)}
+}

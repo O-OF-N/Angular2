@@ -117,11 +117,3 @@ a:hover{
     border-style: dashed;
     border-color: ivory;
 }
-
-ul div:hover{
-    -webkit-transform: rotate(360deg) scale(2);
-    -moz-transform: rotate(360deg) scale(2);
-    -o-transform: rotate(360deg) scale(2);
-    -ms-transform: rotate(360deg) scale(2);
-    transform: scale(5);
-}

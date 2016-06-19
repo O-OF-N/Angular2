@@ -31,3 +31,20 @@
     float: none;
     width: 100%;
 }
+.popout-services {
+    animation: popout 1s ease;
+    -webkit-animation: popout-services 1s ease;
+}
+
+@keyframes popout-services {
+    from{transform:rotate(0deg)}
+    40%{transform:rotate(-1deg)}
+    80%{transform:rotate(1deg)}
+    to{transform:scale(0deg)}
+}
+@-webkit-keyframes popout-services {
+    from{transform:rotate(0deg)}
+    40%{transform:rotate(-1deg)}
+    80%{transform:rotate(1deg)}
+    to{transform:scale(0deg)}
+}
