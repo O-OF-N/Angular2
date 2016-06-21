@@ -23,9 +23,11 @@
       <ul>
         <li>
             <a href="javascript:void(0)" class="closebtn" (click)="toggle()">&times;</a>
+            <hr/>
         </li>
         <li *ngFor="let routes of routeComponent">
           <a id="a-menu-item" [routerLink]="routes.routes" (click)="toggle()">{{routes.name}}</a>
+          <hr/>
         </li>
       </ul>
     </div>

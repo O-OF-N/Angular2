@@ -92,11 +92,7 @@ color: seagreen;
 
 }
 
-#div-navigation-mobile li:before {
-content: " | ";
-padding: 0.5%;
-color: seagreen;
-}
+
 
 #div-navigation-mobile li:first-child:before {
     content: none;
@@ -123,6 +119,11 @@ and (min-device-width : 700px) {
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+#div-navigation-mobile li:before {
+content: " | ";
+padding: 0.5%;
+color: seagreen;
+}
 }
 @media only screen 
 and (max-device-width : 700px) {
@@ -134,6 +135,10 @@ and (max-device-width : 700px) {
     transform: scale(1.2);
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#div-navigation-mobile li:before {
+padding: 0.5%;
+color: seagreen;
 }
 }
 a:hover{
