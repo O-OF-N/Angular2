@@ -56,17 +56,26 @@ color: seagreen;
     height: 100%;
     float: left;
 }
+
+#img-menu{
+    display: block;
+    margin: 0 auto;
+}
+
 #div-logo-mobile{
     width: 90%;
     height: 100%;
     float: left;
+    color: cornflowerblue;
+    text-align: center;
 }
 
 #div-navigation-mobile{
     width: 80%;
     height: 100%;
-    float: left;
-    align-items: flex-end;
+    float: left; 
+    border: 1px;
+    border-color: cornflowerblue;
 }
 
 #div-navigation-mobile ul
@@ -103,6 +112,8 @@ a{
     font-weight: bolder;
     text-decoration: none;
 }
+@media only screen 
+and (min-device-width : 700px) {
 .router-link-active{
     background-color: dodgerblue;
     border-radius: 10px;
@@ -112,10 +123,67 @@ a{
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
+}
+@media only screen 
+and (max-device-width : 700px) {
+.router-link-active{
+    background-color: dodgerblue;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: khaki;
+    transform: scale(1.2);
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+}
 a:hover{
     background-color: dodgerblue ;
     border-radius: 10px;
     border-style: dashed;
     border-color: ivory;
+}
+
+
+/* The side navigation menu */
+.sidenav {
+    height: 40%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }

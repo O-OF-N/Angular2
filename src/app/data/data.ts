@@ -15,7 +15,7 @@ export class Data implements DataComponent {
         //front => One side of the cards [String]
         //back => Other side of the card [Array of string]
         cards: [
-            { front: "Strategies and Planning", back: ['Planning', 'Project Management', 'Testing', 'Training and Implementation'] },
+            { front: "Strategies and Planning", back: ['Planning', 'Project Management', 'Testing'] },
             { front: "Technology Assessments", back: ['Analyze your IT infrastructure', 'Identify the vulnerabilities', 'Set priorities'] },
             { front: "Implementation", back: ['Test', 'Re-test', 'Implement'] },
             { front: "Strategies and Planning", back: ['Our experts can take care of your project budgeting', 'We can suggest the best solutions to suite your objectives and budget'] },
@@ -84,6 +84,7 @@ export class Data implements DataComponent {
     headerComponent: HeaderComponent = {
         //The ask us global logo image path
         imagePath: "logo.jpg",
+        menuPath: "menu.png",
         //This is complex!! Better not to mess around with this.
         //Contact Vinod Mohanan if any changes are needed with routes.
         routeComponent: [{

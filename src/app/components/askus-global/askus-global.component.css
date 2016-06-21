@@ -3,6 +3,8 @@
     height: 100%;
     width: 100%;
 }
+@media only screen 
+and (min-device-width : 700px) {
 #div-head{
     height: 20%;
     width: 100%;
@@ -16,6 +18,24 @@
 #div-tail{
     height: 10%;
     width: 100%;
+}
+}
+@media only screen 
+and (max-device-width : 700px) {
+#div-head{
+    height: 10%;
+    width: 100%;
+}
+#div-body{
+    height: 80%;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#div-tail{
+    height: 5%;
+    width: 100%;
+}
 }
 #div-app-body{
     float: left;
