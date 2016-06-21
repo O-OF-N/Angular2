@@ -84,7 +84,7 @@ export class Data implements DataComponent {
     headerComponent: HeaderComponent = {
         //The ask us global logo image path
         imagePath: "logo.jpg",
-        menuPath: "menu.png",
+        menuPath: "Menu.png",
         //This is complex!! Better not to mess around with this.
         //Contact Vinod Mohanan if any changes are needed with routes.
         routeComponent: [{
