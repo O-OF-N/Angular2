@@ -72,7 +72,7 @@ color: seagreen;
 
 #div-navigation-mobile{
     width: 80%;
-    height: 100%;
+    height: 91%;
     float: left; 
     border: 1px;
     border-color: cornflowerblue;
@@ -151,10 +151,11 @@ a:hover{
 
 /* The side navigation menu */
 .sidenav {
-    height: 40%; /* 100% Full-height */
+    height: 100%; /* 100% Full-height */
     width: 100%; /* 0 width - change this with JavaScript */
     position: absolute; /* Stay in place */
     z-index: 1; /* Stay on top */
+    margin: 2.3% 0% 3% 2.75%;
     top: 0;
     left: 0;
     background-color: #111; /* Black*/
