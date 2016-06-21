@@ -152,7 +152,7 @@ a:hover{
 /* The side navigation menu */
 .sidenav {
     height: 40%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 100%; /* 0 width - change this with JavaScript */
     position: absolute; /* Stay in place */
     z-index: 1; /* Stay on top */
     top: 0;
@@ -168,7 +168,7 @@ a:hover{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: cornflowerblue;
+    color: lightblue;
     display: block;
     transition: 0.3s
 }
